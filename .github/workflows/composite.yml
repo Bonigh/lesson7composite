@@ -12,5 +12,5 @@ jobs:
         with:
           number1: 4
           number2: 2
-      - run: echo ${{ steps.compositeAction.outputs.result}}
+      - run: echo ${{ steps.compositeAction.outputs.result }}
     
