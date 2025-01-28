@@ -2,7 +2,7 @@ name: composite
 description: calculator to test composite actions
 inputs:
   number1:
-    requires: true
+    required: true
     default: 0
   number2:
     required: true
@@ -17,7 +17,7 @@ runs:
     - shell: bash
       id: sum-result
       run: |
-        num1=${{ inputs.number1 }}
-        num2=${{ inputs.number2 }}
-        result=${{num1 + num2}}
-        echo "result=$result" >> "GITHUB_OUTPUT"
+        num1 = ${{ inputs.number1 }}
+        num2 = ${{ inputs.number2 }}
+        result = ${{num1 + num2}}
+        echo "result = $result" >> "GITHUB_OUTPUT"
